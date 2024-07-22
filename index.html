@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body style="background-color:#ADD8E6;">
+    <div class="container">
+        <div class="user-selection">
+            <label for="user-type">Select site:</label>
+            <select id="user-type" onchange="filterSites()">
+                <option value="">Select</option>
+                <option value=".In">.In</option>
+                <option value=".Gov.in">.Gov.in</option>
+                <option value=".Org.in">.Org.in</option>
+                <option value="others">others</option>
+            </select>
+            <div class="search-container">
+                <label for="siteSearch">Search Site:</label>
+                <input type="text" id="siteSearch" name="siteSearch" oninput="searchSites()" placeholder="Enter required site">
+            </div>
+        </div>
+    </div>
+    
+    <div id="links">
+        <h1 class="in">.In Sites</h1>    
+        <a class="in" href="http://www.bsa.in">http://www.bsa.in</a><br>
+        <a class="in" href="http://www.bsaladybird.in">http://www.bsaladybird.in</a><br>
+        <a class="in" href="http://www.bundook.in">http://www.bundook.in</a><br>
+        <a class="in" href="http://www.cacl.in">http://www.cacl.in</a><br>
+        <a class="in" href="http://www.camshot.in">http://www.camshot.in</a><br>
+        <a class="in" href="http://www.ceramix.in">http://www.ceramix.in</a><br>
+        <a class="in" href="http://www.designdimensions.in">http://www.designdimensions.in</a><br>
+        <a class="in" href="http://www.developed.in">http://www.developed.in</a><br>
+        <a class="in" href="http://www.easymovies.in">http://www.easymovies.in</a><br>
+        <a class="in" href="http://www.edu.in">http://www.edu.in</a><br>
+        <a class="in" href="http://www.hellohealyh.in">http://www.hellohealth.in</a><br>
+        <a class="in" href="http://www.airindia.in">http://www.airindia.in</a><br>
+        <a class="in" href="http://www.pussycat.in/chatgpt2/index.html">pussycat.in</a><br>
+        <a class="in" href="http://www.ramoola.in/chatgpt2/index.html">ramoola.in</a><br>
+        <a class="in" href="http://www.uninsurance.in/chatgpt2/index.html">uninsurance.in</a><br>
+        <a class="in" href="http://www.yokasarees.in/chatgpt2/index.html">yokasarees.in</a><br>
+        <a class="in" href="http://www.jylxjuzzl.in/chatgpt2/index.html">jylxjuzzl.in</a><br>
+        <a class="in" href="http://www.kaanva.in/chatgpt2/index.html">kaanva.in</a><br>
+        <a class="in" href="http://www.awaretech.in/chatgpt2/index.html">awaretech.in</a><br>
+        <a class="in" href="http://www.brise.in/chatgpt2/index.html">brise.in</a><br>
+        <a class="in" href="http://www.tutorialzone.in/chatgpt2/index.html">tutorialzone.in</a><br>
+        <a class="in" href="http://www.kiriaarts.in/chatgpt2/index.html">kiriaarts.in</a><br>
+        <a class="in" href="http://www.rawattractorsengineeringworks.in/chatgpt2/index.html">rawattractorsengineeeringworks.in</a><br>
+        <a class="in" href="http://www.habboorig.in/chatgpt2/index.html">habboorig.in</a><br>
+        <a class="in" href="http://www.sunriseentp.in/chatgpt2/index.html">sunriseentp.in</a><br>
+        <a class="in" href="http://www.omede.in/chatgpt2/index.html">omede.in</a><br>
+        <a class="in" href="http://www.shrikrishnainterio.in/chatgpt2/index.html">shrikrishnainterio.in</a><br>
+        <a class="in" href="http://www.bhartiyjanataparty.in/chatgpt2/index.html">bhartiyjanataparty.in</a><br>
+        <a class="in" href="http://www.voxceiling.in/chatgpt2/index.html">voxceiling.in</a><br>
+        <a class="in" href="http://www.habboorig.in/chatgpt2/index.html">habboorig.in</a><br>
+        <a class="in" href="http://www.veeratourstravels.in/chatgpt2/index.html">veeratourstravels.in</a><br>
+        <a class="in" href="http://www.professionalelectrician.in/chatgpt2/index.html">professionalelectrician.in</a><br>
+        <a class="in" href="http://www.mymanagecredit.in/chatgpt2/index.html">mymanagecredit.in</a><br>
+        <a class="in" href="http://www.globaldriverservices.in/chatgpt2/index.html">globaldriverservices.in</a><br>
+        <a class="in" href="http://www.jagranalive.in/chatgpt2/index.html">jagranalive.in</a><br>
+        <a class="in" href="http://www.medicovercordio.in/chatgpt2/index.html">medicovercardio.in</a><br>
+        <a class="in" href="http://www.hostonlive.in/chatgpt2/index.html">hostonlive.in</a><br>
+        <a class="in" href="http://www.blastfoundation.in/chatgpt2/index.html">blastfoundation.in</a><br>
+        <a class="in" href="http://www.cabyatra.in/chatgpt2/index.html">cabyatra.in</a><br>
+        <a class="in" href="http://www.mykharidobazaar.in/chatgpt2/index.html">mykharidobazaar.in</a><br>
+        <a class="in" href="http://www.cars730.in/chatgpt2/index.html">cars730.in</a><br>
+        <a class="in" href="http://www.erc20.in/chatgpt2/index.html">erc20.in</a><br>
+        <a class="in" href="http://www.digitalpandyaleepi.in/chatgpt2/index.html">digitalpandyaleepi.in</a><br>
+       <a class="in" href="http://www.clickburstnetwork.in/chatgpt2/index.html">clickburstnetwork.in</a><br>
+       <a class="in" href="http://www.originalspareparts.in/chatgpt2/index.html">originalspareparts.in</a><br>
+       <a class="in" href="http://www.viden.in/chatgpt2/index.html">viden.in</a><br>
+       <a class="in" href="http://www.cotcom.in/chatgpt2/index.html">cotcom.in</a><br>
+       <a class="in" href="http://www.scorecardjeemainntaonline.in/chatgpt2/index.html">scorecardjeemainntaonline.in</a><br>
+       <a class="in" href="http://www.mytransportagents.in/chatgpt2/index.html">mytransportagents.in</a><br>
+       <a class="in" href="http://www.sangitakitchen.in/chatgpt2/index.html">sangitakitchen.in</a><br>
+       <a class="in" href="http://www.jeemainntaonline.in/chatgpt2/index.html">jeemainntaonline.in</a><br>
+       <a class="in" href="http://www.uniquesoul.in/chatgpt2/index.html">uniquesoul.in</a><br>
+       <a class="in" href="http://www.jobcomindia.in/chatgpt2/index.html">jobcomindia.in</a><br>
+       <a class="in" href="http://www.astrodom.in/chatgpt2/index.html">astrodom.in</a><br>
+       <a class="in" href="http://www.fanostylecourse.in/chatgpt2/index.html">fanostylecourse.in</a><br>
+       <a class="in" href="http://www.mymanagecredits.in/chatgpt2/index.html">mymanagecredits.in</a><br>
+       <a class="in" href="http://www.ittram.in/chatgpt2/index.html">ittram.in</a><br>
+       <a class="in" href="http://www.caspostore.in/chatgpt2/index.html">caspostore.in</a><br>
+       <a class="in" href="http://www.tchvrg.in/chatgpt2/index.html">tchvrg.in</a><br>
+       <a class="in" href="http://www.thepetsark.in/chatgpt2/index.html">thepetsark.in</a><br>
+       <a class="in" href="http://www.skfi.in/chatgpt2/index.html">skfi.in</a><br>
+       <a class="in" href="http://www.thepromoter.in/chatgpt2/index.html">thepromoter.in</a><br>
+       <a class="in" href="http://www.capitallaksa.in/chatgpt2/index.html">capitallaksa.in</a><br>
+       <a class="in" href="http://www.daynightgym.in/chatgpt2/index.html">daynightgym.in</a><br>
+       <a class="in" href="http://www.skyneem.in/chatgpt2/index.html">skyneem.in</a><br>
+       <a class="in" href="http://www.mumbaigame.in/chatgpt2/index.html">mumbaigame.in</a><br>
+       <a class="in" href="http://www.aramsol.in/chatgpt2/index.html">aramsol.in</a><br>
+       <a class="in" href="http://www.williamfdev.in/chatgpt2/index.html">williamfdev.in</a><br>
+       <a class="in" href="http://www.arytech.in/chatgpt2/index.html">arytech.in</a><br>
+       <a class="in" href="http://www.rathyatraklcom.in/chatgpt2/index.html">rathyatraklcom.in</a><br>
+       <a class="in" href="http://www.proppr.in/chatgpt2/index.html">proppr.in</a><br>
+       <a class="in" href="http://www.communitycaretrust.in/chatgpt2/index.html">communitycaretrust.in</a><br>
+       <a class="in" href="http://www.fabriva.in/chatgpt2/index.html">fabriva.in</a><br>
+       <a class="in" href="http://www.koreastory.in/chatgpt2/index.html">koreastory.in</a><br>
+       <a class="in" href="http://www.eazyworks.in/chatgpt2/index.html">eazyworks.in</a><br>
+       <a class="in" href="http://www.juniorclothings.in/chatgpt2/index.html">juniorclothings.in</a><br>
+       <a class="in" href="http://www.atozinsurance.in/chatgpt2/index.html">atozinsurance.in</a><br>
+       <a class="in" href="http://www.seemaclothemporium.in/chatgpt2/index.html">seemaclothemporium.in</a><br>
+       <a class="in" href="http://www.kwglog.in/chatgpt2/index.html">kwglog.in</a><br>
+       <a class="in" href="http://www.dreamghar.in/chatgpt2/index.html">dreamghar.in</a><br>
+       <a class="in" href="http://www.bdgwinlog.in/chatgpt2/index.html">bdgwinlog.in</a><br>
+       <a class="in" href="http://www.smart-aibot.in/chatgpt2/index.html">smart-aibot.in</a><br>
+       <a class="in" href="http://www.blrapp.in/chatgpt2/index.html">blrapp.in</a><br>
+       <a class="in" href="http://www.sisproperties.in/chatgpt2/index.html">sisproperties.in</a><br>
+       <a class="in" href="http://www.mytoolsguru.in/chatgpt2/index.html">mytoolsguru.in</a><br>
+       <a class="in" href="http://www.teachtechclasses.in/chatgpt2/index.html">teachtechclasses.in</a><br>
+       <a class="in" href="http://www.joypackindia.in/chatgpt2/index.html">joypackindia.in</a><br>
+       <a class="in" href="http://www.ai-ap.in/chatgpt2/index.html">ai-ap.in</a><br>
+       <a class="in" href="http://www.job36.in/chatgpt2/index.html">job36.in</a><br>
+       <a class="in" href="http://www.tradewarriors.in/chatgpt2/index.html">tradewarriors.in</a><br>
+       <a class="in" href="http://www.pallaviexim.in/chatgpt2/index.html">pallaviexim.in</a><br>
+       <a class="in" href="http://www.softink.in/chatgpt2/index.html">softink.in</a><br>
+       <a class="in" href="http://www.rangustraacouture.in/chatgpt2/index.html">rangustraacouture.in</a><br>
+       <a class="in" href="http://www.onevendor.in/chatgpt2/index.html">onevendor.in</a><br>
+       <a class="in" href="http://www.okwinlog.in/chatgpt2/index.html">okwinlog.in</a><br>
+       <a class="in" href="http://www.machinewood.in/chatgpt2/index.html">machinewood.in</a><br>
+       <a class="in" href="http://www.nasibrathee.in/chatgpt2/index.html">nasibrathee.in</a><br>
+       <a class="in" href="http://www.urbanmediahouse.in/chatgpt2/index.html">urbanmediahouse.in</a><br>
+       <a class="in" href="http://www.gothrillindia.in/chatgpt2/index.html">gothrillindia.in</a><br>
+       <a class="in" href="http://www.wegmaan.in/chatgpt2/index.html">wegmaan.in</a><br>
+       <a class="in" href="http://www.vidyashri.in/chatgpt2/index.html">vidyashri.in</a><br>
+       <a class="in" href="http://www.prime-store.in/chatgpt2/index.html">prime-store.in</a><br>
+       <a class="in" href="http://www.ok-game.in/chatgpt2/index.html">ok-game.in</a><br>
+        <a class="in" href="http://www.genzhustle.in/chatgpt2/index.html">genzhustle.in</a><br>
+       <a class="in" href="http://www.cognitix.in/chatgpt2/index.html">cognitix.in</a><br>
+       <a class="in" href="http://www.afsarabeautyfashionshop.in/chatgpt2/index.html">afsarabeautyfashionshop.in</a><br>
+       <a class="in" href="http://www.sarkariyojanae.in/chatgpt2/index.html">sarkariyojanae.in</a><br>
+       <a class="in" href="http://www.anmolmit.in/chatgpt2/index.html">anmolmit.in</a><br>
+        <a class="in" href="http://www.vimbai.in/chatgpt2/index.html">vimbai.in</a><br>
+       <a class="in" href="http://www.organicneomfood.in/chatgpt2/index.html">organicneomfood.in</a><br>
+       <a class="in" href="http://www.raretoon.in/chatgpt2/index.html">raretoon.in</a><br>
+       <a class="in" href="http://www.genepill.in/chatgpt2/index.html">genepill.in</a><br>
+       <a class="in" href="http://www.mytradeindia.in/chatgpt2/index.html">mytradeindia.in</a><br>
+       <a class="in" href="http://www.sphssbina.in/chatgpt2/index.html">sphssbina.in</a><br>
+
+
+
+       
+
+
+
+        <h1 class="coin">.Co.in Sites</h1>
+        <a class="coin" href="http://www.jitendrasingh.co.in/chatgpt2/index.html">jitendrasingh.co.in</a><br>
+        <a class="coin" href="http://www.prepshala.co.in/chatgpt2/index.html">prepshala.co.in</a><br>
+        <a class="coin" href="http://www.genailabs.co.in/chatgpt2/index.html">genailabs.co.in</a><br>
+        <a class="coin" href="http://www.verinon.co.in/chatgpt2/index.html">verinon.co.in</a><br>
+        <a class="coin" href="http://www.happyholiday.co.in/chatgpt2/index.html">happyholiday.co.in</a><br>
+        <a class="coin" href="http://www.hyrax.co.in/chatgpt2/index.html">hyrax.co.in</a><br>
+        <a class="coin" href="http://www.futuresolution.co.in/chatgpt2/index.html">futuresolution.co.in</a><br>
+        <a class="coin" href="http://www.kunjenterprises.co.in/chatgpt2/index.html">kunjenterprises.co.in</a><br>
+        <a class="coin" href="http://www.8745.co.in/chatgpt2/index.html">8745.co.in</a><br>
+        <a class="coin" href="http://www.mohidigital.co.in/chatgpt2/index.html">mohidigital.co.in</a><br>
+        <a class="coin" href="http://www.spectrums.co.in/chatgpt2/index.html">spectrums.co.in</a><br>
+        <a class="coin" href="http://www.modirailwaypsychoprayagraj.co.in/chatgpt2/index.html">modirailwaypsychoprayagraj.co.in</a><br>
+        <a class="coin" href="http://www.trumetal.co.in/chatgpt2/index.html">trumetal.co.in</a><br>
+        <a class="coin" href="http://www.hyrax.co.in/chatgpt2/index.html">hyrax.co.in</a><br>
+        <a class="coin" href="http://www.wcommerce.co.in/chatgpt2/index.html">wcommerce.co.in</a><br>
+        <a class="coin" href="http://www.radhakrishnarealestate.co.in/chatgpt2/index.html">radhakrishnarealestate.co.in</a><br>
+         <a class="coin" href="http://www.englishtemple.co.in/chatgpt2/index.html">englishtemple.co.in</a><br>
+         <a class="coin" href="http://www.romimommyspetsbakery.co.in/chatgpt2/index.html">romimommyspetsbakery.co.in</a><br>
+         <a class="coin" href="http://www.rewaplantdelivery.co.in/chatgpt2/index.html">rewaplantdelivery.co.in</a><br>
+         <a class="coin" href="http://www.tyrebazaar.co.in/chatgpt2/index.html">tyrebazaar.co.in</a><br>
+          <a class="coin" href="http://www.ksrply.co.in/chatgpt2/index.html">ksrply.co.in</a><br>
+         <a class="coin" href="http://www.aerowing.co.in/chatgpt2/index.html">aerowing.co.in</a><br>
+
+
+
+
+
+        
+        <h1 class="orgin">.Org.in Sites</h1>
+        <a class="orgin" href="http://www.polycab.org.in">http://www.polycab.org.in</a><br>
+        <a class="orgin" href="http://www.fip.org.in">http://www.fip.org.in</a><br>
+        <a class="orgin" href="http://www.rbi.org.in">http://www.rbi.org.in</a><br>
+        <a class="orgin" href="http://www.find.org.in">http://www.find.org.in</a><br>
+        <a class="orgin" href="http://www.industree.org.in">http://www.industree.org.in</a><br>
+         <a class="orgin" href="http://www.kamayanimahavidyalaya.org.in/chatgpt2/index.html">kamayanimahavidyalaya.org.in</a><br>
+
+        <h1 class="govin">.Gov.in Sites</h1>
+        <a class="govin" href="http://tajmahal.gov.in">http://tajmahal.gov.in</a><br>
+        <a class="govin" href="http://uidai.gov.in">http://uidai.gov.in</a><br>
+        <a class="govin" href="http://diu.gov.in">http://diu.gov.in</a><br>
+        <a class="govin" href="http://pmrnf.gov.in">http://pmrnf.gov.in</a><br>
+        <a class="govin" href="http://indianvisaonline.gov.in">http://indianvisaonline.gov.in</a><br>
+    </div>
+
+    <script>
+        function filterSites() {
+            const userType = document.getElementById('user-type').value;
+            const inSites = document.querySelectorAll('.in');
+            const orgInSites = document.querySelectorAll('.orgin');
+            const govInSites = document.querySelectorAll('.govin');
+            
+            inSites.forEach(site => site.classList.add('hidden'));
+            orgInSites.forEach(site => site.classList.add('hidden'));
+            govInSites.forEach(site => site.classList.add('hidden'));
+            
+            if (userType === '.In') {
+                inSites.forEach(site => site.classList.remove('hidden'));
+            } else if (userType === '.Org.in') {
+                orgInSites.forEach(site => site.classList.remove('hidden'));
+            } else if (userType === '.Gov.in') {
+                govInSites.forEach(site => site.classList.remove('hidden'));
+            } else if (userType === 'others') {
+                inSites.forEach(site => site.classList.add('hidden'));
+                orgInSites.forEach(site => site.classList.add('hidden'));
+                govInSites.forEach(site => site.classList.add('hidden'));
+            }
+        }
+
+        function searchSites() {
+            const query = document.getElementById('siteSearch').value.toLowerCase();
+            const links = document.querySelectorAll('#links a');
+            
+            links.forEach(link => {
+                if (link.href.toLowerCase().includes(query)) {
+                    link.classList.remove('hidden');
+                } else {
+                    link.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
